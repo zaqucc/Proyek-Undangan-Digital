@@ -1,1 +1,14 @@
-
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pemesanan Undangan</title><link rel="stylesheet" href="../css/global.css"><link rel="stylesheet" href="order.css"></head>
+<body><header class="site-header"><a class="brand" href="../">Undangan<span>Digital</span></a><a class="text-link" href="../">Kembali ke katalog</a></header>
+<main class="form-wrap"><p class="eyebrow">PEMESANAN</p><h1>Ceritakan acara kamu.</h1><p>Isi data awal berikut. Tim admin akan menghubungi untuk langkah selanjutnya.</p><div class="notice">Harga dan pembayaran dikonfirmasi secara manual. Jangan mengirim data sensitif melalui formulir ini.</div>
+<form id="order-form"><div class="form-grid">
+<div class="field"><label for="name">Nama pemesan</label><input id="name" name="name" required maxlength="100"></div>
+<div class="field"><label for="phone">Nomor WhatsApp</label><input id="phone" name="phone" required inputmode="tel" maxlength="30"></div>
+<div class="field"><label for="event">Jenis acara</label><select id="event" name="event_type" required><option value="">Pilih kategori</option><option value="wedding">Pernikahan</option><option value="aqiqah">Aqiqah</option><option value="birthday">Ulang tahun</option><option value="khitanan">Khitanan</option><option value="other">Acara lain</option></select></div>
+<div class="field"><label for="template">Kode template</label><select id="template" name="template_code"><option value="">Belum memilih</option><option>WD001</option><option>WD002</option><option>AQ001</option><option>BD001</option><option>KH001</option></select></div>
+<div class="field"><label for="date">Tanggal acara</label><input id="date" name="event_date" type="date"></div>
+<div class="field"><label for="city">Lokasi acara</label><input id="city" name="event_location" maxlength="200"></div>
+<div class="field full"><label for="notes">Catatan tambahan</label><textarea id="notes" name="notes" rows="4" maxlength="2000"></textarea></div>
+<div class="field full"><button class="button" type="submit">Kirim permintaan</button><p id="form-message" role="status"></p></div>
+</div></form></main><script src="../js/config.js"></script><script src="../js/supabase-client.js"></script><script src="order.js"></script></body></html>
