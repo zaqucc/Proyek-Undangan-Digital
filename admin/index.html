@@ -1,0 +1,6 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin — Undangan Digital</title><link rel="stylesheet" href="../css/global.css"><link rel="stylesheet" href="admin.css"></head><body>
+<header class="site-header"><a class="brand" href="../">Undangan<span>Digital</span></a><span class="status">Area admin</span></header>
+<main class="form-wrap"><p class="eyebrow">DASHBOARD</p><h1>Kelola pesanan</h1><p>Login menggunakan akun admin Supabase. Pastikan kebijakan database sudah diuji.</p>
+<form id="login-form"><div class="form-grid"><div class="field"><label for="email">Email admin</label><input id="email" type="email" required></div><div class="field"><label for="password">Password</label><input id="password" type="password" required></div><div class="field full"><button class="button" type="submit">Login</button><button class="button button-light" type="button" id="logout">Logout</button><p id="admin-message" role="status"></p></div></div></form>
+<section id="dashboard" class="hidden"><h2>Daftar pesanan</h2><button class="button" id="refresh">Muat ulang</button><div id="orders-wrap"></div></section></main>
+<script src="../js/config.js"></script><script src="../js/supabase-client.js"></script><script src="admin.js"></script></body></html>
